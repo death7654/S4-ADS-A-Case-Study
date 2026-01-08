@@ -32,6 +32,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run Grading Script
         run: |
+          cd Python
           python3 autograder.py
       - name: Upload Grading Results
         uses: actions/upload-artifact@v4
